@@ -1,0 +1,134 @@
+body {
+    background-color: rgb(8, 8, 107);
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(73, 73, 165);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a,
+.footer-second ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+nav ul li a:hover,
+.footer-second ul li a:hover,
+a:hover {
+    color: rgb(152, 152, 226);
+    font-size: 1.03rem;
+    transition: 0.5s;
+}
+
+.section {
+    height: auto;
+    margin: 14rem;
+}
+
+h3 {
+    display: inline;
+}
+
+footer {
+    background-color: rgb(8, 8, 41);
+    height: 175px;
+}
+
+.footer {
+    display: flex;
+    padding: 23px 122px;
+    justify-content: space-evenly;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer>div {
+    width: 223px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.section div {
+    margin: 5px 0;
+}
+
+@media(max-width:700px) {
+    body {
+        background-color: rgb(52, 7, 95);
+    }
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    .section {
+        height: 35rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .section div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem 0;
+    }
+
+    .link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        height: auto;
+    }
+}
