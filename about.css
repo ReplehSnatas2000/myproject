@@ -56,12 +56,15 @@ nav ul li a:hover,
     width: 30%;
 }
 
-.leftSection {
-    font-size: 2rem;
+h3,
+Address {
+    display: inline;
 }
 
 .rightSection img {
     width: 80%;
+    border: 0 solid black;
+    border-radius: 50%;
 }
 
 .purple,
@@ -83,10 +86,20 @@ main hr {
 .secondSection {
     margin: auto;
     max-width: 80vw;
-    height: 35rem;
+    height: 25rem;
 }
 
-.secondSection h1 {
+.thirdSection {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 80vw;
+    height: 45rem;
+    justify-content: space-evenly;
+}
+
+.secondSection h1,
+.thirdSection h1 {
     font-size: 1.9rem;
 }
 
@@ -107,15 +120,15 @@ main hr {
 
 .vertical-title {
     position: relative;
-    top: 75px;
+    top: 55px;
     width: 150px;
 }
 
 .vertical-desc {
     position: relative;
-    top: 85px;
-    color: gray;
-    font-size: 9px;
+    top: 70px;
+    color: chocolate;
+    font-size: 10px;
     width: 150px;
 }
 
@@ -155,6 +168,16 @@ footer {
 
 .btn:active {
     background-color: rgb(62, 4, 62);
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+.year {
+    position: relative;
+    bottom: 25px;
+    right: 18px;
 }
 
 @media (max-width:1444px) {
@@ -220,23 +243,33 @@ footer {
     }
 
     .rightSection {
-        width: 72% !important;
+        width: 45% !important;
         display: flex;
         justify-content: center;
     }
 
     .secondSection {
-        height: 70rem;
-    }
-}
-
-@media (max-width:390px) {
-    .leftSection {
-        font-size: 20px;
+        height: 55rem;
     }
 
     img {
-        width: 10em !important;
+        margin: 5em 0;
+    }
+
+    .year {
+        position: relative;
+        top: 90px;
+        right: 50px;
+    }
+}
+
+@media (max-width:405px) {
+    .leftSection {
+        font-size: 10px;
+    }
+
+    img {
+        width: 146px !important;
     }
 
     .link {
